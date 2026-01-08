@@ -5,7 +5,6 @@ import { AnimatePresence } from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
 import FadeRight from "@/animation/fade-right";
-import heroProfileImg from "@/public/images/heroProfile.png";
 import DuotoneImage from "./duotone-image";
 
 export default function AboutHero() {
@@ -15,7 +14,8 @@ export default function AboutHero() {
         <AnimatePresence>
           <FadeUp key="hero-image" duration={0.6}>
             <DuotoneImage
-              src={heroProfileImg}
+              /* FIXED: Using direct string path instead of import variable */
+              src="/images/heroProfile.png" 
               width={100}
               height={100}
               className="h-auto w-full px-0 xl:px-16"
@@ -36,19 +36,19 @@ export default function AboutHero() {
           </FadeUp>
           <FadeUp key="description-1" duration={0.6} delay={0.2}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-  I am a B.Tech Computer Science student specializing in building scalable digital solutions. 
-  From architecting backends in Laravel and .NET to crafting cross-platform mobile 
-  experiences with Flutter, I bridge the gap between design and robust engineering.
-</p>
+              I am a B.Tech Computer Science student specializing in building scalable digital solutions. 
+              From architecting backends in Laravel and .NET to crafting cross-platform mobile 
+              experiences with Flutter, I bridge the gap between design and robust engineering.
+            </p>
           </FadeUp>
           <FadeUp key="description-2" duration={0.6} delay={0.4}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-  Explore my latest{" "}
-  <Link href="/projects" className="underline underline-offset-4">
-    <span className="text-accent">projects</span>
-  </Link>{" "}
-  showcasing my expertise in React, Flutter, Firebase, and Full Stack web development.
-</p>
+              Explore my latest{" "}
+              <Link href="/projects" className="underline underline-offset-4">
+                <span className="text-accent">projects</span>
+              </Link>{" "}
+              showcasing my expertise in React, Flutter, Firebase, and Full Stack web development.
+            </p>
           </FadeUp>
           <FadeRight
             key="hero-location"
