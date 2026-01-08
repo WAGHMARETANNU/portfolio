@@ -1,36 +1,20 @@
 import { type ExperienceShowcaseListItemProps } from "@/components/experience/experience-showcase-list-item";
 
-export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
+export const EXPERIENCE = [
   {
-    title: "Software Developer",
-    organisation: {
-      name: "Skima",
-      href: "https://skima.ai/",
-    },
-    date: "Oct 2023 - Present",
-    location: "Mumbai",
-    description: "Reactjs and Nextjs app development",
-  },
-  {
-    title: "Engineering Trainee",
-    organisation: {
-      name: "Hexaware",
-      href: "https://hexaware.com/",
-    },
-    date: "July 2023 - Sep 2023",
-    location: "Remote",
+    title: "Full Stack Developer (Academic Projects)",
+    company: "B.Tech Computer Science",
+    location: "Gujarat, India",
+    duration: "2026 - Present",
     description:
-      "Learned to work we monorepo and got to learn application architecture, scalling and build tooling to improve CI/CD of micro services.",
+      "Developing various full-stack applications including a Hospital Traffic Monitor (Flutter/Firebase) and a Task Management System (Laravel). Focused on writing clean, maintainable code and implementing efficient database schemas.",
   },
   {
-    title: "Frontend Developer Intern",
-    organisation: {
-      name: "Master Infotech",
-      href: "https://masterinfotech.com/",
-    },
-    date: "Winter - 2022",
+    title: "Collaborative Developer",
+    company: "Void-Music Group Project",
     location: "Remote",
+    duration: "3 Months",
     description:
-      "Worked on a team responsible for developing new features and updating old codebases to latest technologies. Learned alot about web development and CI/CD development cycle.",
-  },
+      "Worked in a team environment to build a music streaming platform using PHP and MySQL. Handled database optimization and ensured seamless integration between frontend and backend components.",
+  }
 ];

@@ -36,20 +36,19 @@ export default function AboutHero() {
           </FadeUp>
           <FadeUp key="description-1" duration={0.6} delay={0.2}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-              I turn vision into reality with code. Whether I&apos;m working on
-              a website or any digital product, I bring my commitment to design
-              excellence and user-centered thinking to every project I work on.
-            </p>
+  I am a B.Tech Computer Science student specializing in building scalable digital solutions. 
+  From architecting backends in Laravel and .NET to crafting cross-platform mobile 
+  experiences with Flutter, I bridge the gap between design and robust engineering.
+</p>
           </FadeUp>
           <FadeUp key="description-2" duration={0.6} delay={0.4}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-              Explore my latest{" "}
-              <Link href="/projects" className="underline underline-offset-4">
-                <span className="text-accent">projects</span>
-              </Link>{" "}
-              showcasing my expertise in Reactjs, Nextjs, Javascript, Typescript
-              and web development.
-            </p>
+  Explore my latest{" "}
+  <Link href="/projects" className="underline underline-offset-4">
+    <span className="text-accent">projects</span>
+  </Link>{" "}
+  showcasing my expertise in React, Flutter, Firebase, and Full Stack web development.
+</p>
           </FadeUp>
           <FadeRight
             key="hero-location"
@@ -67,7 +66,7 @@ export default function AboutHero() {
               />
             </div>
             <span className="text-lg font-medium text-foreground">
-              Mumbai, India
+              Gujarat, India
             </span>
           </FadeRight>
         </AnimatePresence>
