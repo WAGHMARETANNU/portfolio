@@ -1,4 +1,4 @@
-export const metadata = {
+export const siteMetadata={
   title: "Tannu Waghmare | Full Stack Developer",
   description: "Portfolio of Tannu Waghmare, a B.Tech CS student",
   siteUrl: "https://tannu-waghmare.pages.dev", // Add this line!
@@ -20,4 +20,4 @@ export const metadata = {
 };
 
 // This line is the most important fix:
-export const siteMetadata = metadata;
+export default siteMetadata ;
