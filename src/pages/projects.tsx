@@ -1,5 +1,4 @@
 import { NextSeo } from "next-seo";
-
 import ProjectCard from "@/components/projects/project-card";
 import { PROJECTS_CARD } from "@/data/projects";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
@@ -8,31 +7,28 @@ export default function Projects() {
   return (
     <>
       <NextSeo
-        title="Projects by Amit Chauhan - Software Developer Portfolio"
-        description="Explore a collection of projects by Amit Chauhan, a seasoned Software Developer. From innovative web applications to responsive interfaces, discover the depth and diversity of my work."
-        canonical={`${siteMetadata.siteUrl}/projects`}
+        title="Projects by Tannu Waghmare - Software Developer Portfolio"
+        description="Explore a collection of projects by Tannu Waghmare, a seasoned Software Developer. From innovative web applications to responsive interfaces, discover the depth and diversity of my work."
+        canonical={`${siteMetadata?.siteUrl}/projects`}
         openGraph={{
-          url: `${siteMetadata.siteUrl}/projects`,
-          title: "Discover Projects by Amit Chauhan - Software Developer",
+          url: `${siteMetadata?.siteUrl}/projects`,
+          title: "Discover Projects by Tannu Waghmare - Software Developer",
           description:
-            "Explore a showcase of projects crafted by Amit Chauhan, a Software Developer. Witness the fusion of creativity and technology in web development.",
+            "Explore a showcase of projects crafted by Tannu Waghmare, a Software Developer. Witness the fusion of creativity and technology in web development.",
           images: [
             {
-              url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Amit Chauhan - Portfolio Image",
+              url: `${siteMetadata?.siteUrl}/og-image.png`, // Fallback to a standard OG image if twitterImage is removed
+              alt: "Tannu Waghmare - Portfolio Image",
             },
           ],
-          siteName: siteMetadata.siteName,
+          siteName: siteMetadata?.siteName,
           type: "website",
-        }}
-        twitter={{
-          cardType: "summary_large_image",
         }}
         additionalMetaTags={[
           {
             property: "keywords",
             content:
-              "Projects,Amit Portfolio, Software Developer, React Developer, Frontend Developer, Web Development, JavaScript, HTML, CSS, UI/UX, Web Applications, Responsive Design",
+              "Projects, Tannu Portfolio, Software Developer, React Developer, Frontend Developer, Web Development, JavaScript, HTML, CSS, UI/UX, Web Applications, Responsive Design",
           },
         ]}
       />
@@ -59,8 +55,9 @@ export default function Projects() {
             <p className="mt-10 text-base md:text-xl">
               Visit my github to see some of the latest projects{" "}
               <a
-                href={`${siteMetadata.github}?tab=repositories`}
+                href={`${siteMetadata?.github}?tab=repositories`}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="font-semibold text-accent underline underline-offset-2 hover:text-accent/70"
               >
                 Github

@@ -5,6 +5,7 @@ export const siteMetadata = {
   siteUrl: "https://tannu-waghmare.pages.dev",
   siteName: "Tannu Waghmare Portfolio",
   email: "amitchauhan263871@gmail.com",
+  github:"https://github.com/WAGHMARETANNU",
   openGraph: {
     title: "Tannu Waghmare | Full Stack Developer",
     description: "Explore my projects in Web and Mobile development.",
