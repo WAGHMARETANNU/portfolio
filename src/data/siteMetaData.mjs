@@ -1,5 +1,3 @@
-// src/data/siteMetaData.mjs
-
 export const siteMetadata = {
   title: "Tannu Waghmare | Full Stack Developer",
   description: "Portfolio of Tannu Waghmare, a B.Tech CS student and Full Stack Developer.",
@@ -23,5 +21,4 @@ export const siteMetadata = {
     type: "website",
   },
 };
-export { siteMetadata };
-export default siteMetadata;
+export { siteMetadata }
