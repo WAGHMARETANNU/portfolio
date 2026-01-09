@@ -23,3 +23,5 @@ export const siteMetadata = {
     type: "website",
   },
 };
+export { siteMetadata };
+export default siteMetadata;
