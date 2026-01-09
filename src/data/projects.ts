@@ -2,13 +2,17 @@ import { type ProjectShowcaseListItem } from "@/components/projects/project-show
 
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
-    
     index: 0,
     title: "Json Tree",
     href: "/projects",
     tags: ["Nextjs", "Tailwindcss", "Monaco Editor", "Vercel"],
-    // Change 'image' to 'images' and make it an array
+    // Keep this for the Projects page
     images: ["/images/projects/jsontreeDark.webp"], 
+    // Add this back for the Home page
+    image: {
+      LIGHT: "/images/projects/jsontreeDark.webp",
+      DARK: "/images/projects/jsontreeDark.webp",
+    },
   },
   {
     index: 1,
@@ -16,6 +20,10 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     href: "/projects",
     tags: ["Reactjs", "Tailwindcss", "Scss", "Vite", "React-router-dom", "Redux", "Vercel"],
     images: ["/images/projects/manyGamesDark.webp"],
+    image: {
+      LIGHT: "/images/projects/manyGamesDark.webp",
+      DARK: "/images/projects/manyGamesDark.webp",
+    },
   },
   {
     index: 2,
@@ -23,6 +31,10 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     href: "/projects",
     tags: ["Reactjs", "Vite", "Tailwindcss", "Vercel", "Zustand", "React DND"],
     images: ["/images/projects/kanbanDark.webp"],
+    image: {
+      LIGHT: "/images/projects/kanbanDark.webp",
+      DARK: "/images/projects/kanbanDark.webp",
+    },
   },
 ];
 
