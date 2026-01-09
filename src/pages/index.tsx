@@ -1,7 +1,4 @@
-import Head from "next/head";
-
 import { NextSeo } from "next-seo";
-
 import LandingHero from "@/components/landing-hero";
 import SkillsShowcase from "@/components/skills/skills-showcase";
 import ProjectShowcase from "@/components/projects/project-showcase";
@@ -10,46 +7,41 @@ import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function Home() {
+  // Fallback URL to prevent canonical link errors if siteUrl is missing
+  const baseUrl = siteMetadata.siteUrl || "https://tannu-waghmare.pages.dev";
+
   return (
     <>
       <NextSeo
-        title="Amit Chauhan | Software Developer"
-        description="Explore the professional portfolio of Amit Chauhan, a skilled Software Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
-        canonical={siteMetadata.siteUrl}
+        title="Tannu Waghmare | Full Stack Developer"
+        description="Portfolio of Tannu Waghmare, a B.Tech CS student and Full Stack Developer. Explore innovative web projects and modern development expertise."
+        canonical={baseUrl}
         openGraph={{
-          url: siteMetadata.siteUrl,
-          title: "Amit Chauhan - Software Developer",
-          description:
-            "Dive into the world of web development with Amit Chauhan. Discover a Software Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
+          url: baseUrl,
+          title: "Tannu Waghmare | Full Stack Developer",
+          description: "Explore my projects in Web and Mobile development.",
           images: [
             {
-              url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Amit Chauhan - Portfolio Image",
+              url: `${baseUrl}/images/heroProfile.png`,
+              width: 1200,
+              height: 630,
+              alt: "Tannu Waghmare - Portfolio Image",
             },
           ],
-          siteName: siteMetadata.siteName,
+          siteName: siteMetadata.siteName || "Tannu Waghmare Portfolio",
           type: "website",
-        }}
-        twitter={{
-          cardType: "summary_large_image",
         }}
         additionalMetaTags={[
           {
             property: "keywords",
             content:
-              "React Developer, Software Developer, Frontend Developer, Web Developer, JavaScript, HTML, CSS, Portfolio, UI/UX, React.js, Frontend Development, Web Development, JavaScript Developer, Responsive Design",
+              "Full Stack Developer, React Developer, Next.js, Portfolio, Web Development, B.Tech CS, Tannu Waghmare",
           },
         ]}
       />
-      <Head>
-        {siteMetadata.googleSiteVerification && (
-          <meta
-            name="google-site-verification"
-            content={siteMetadata.googleSiteVerification}
-          />
-        )}
-      </Head>
+      
       <LandingHero />
+      {/* This will now work because SKILLS_DATA uses 'sectionName' */}
       <SkillsShowcase skills={SKILLS_DATA} />
       <ProjectShowcase projects={PROJECT_SHOWCASE} />
     </>

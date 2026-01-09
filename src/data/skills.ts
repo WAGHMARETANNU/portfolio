@@ -20,7 +20,7 @@ import {
 
 export const SKILLS_DATA = [
   {
-    title: "Languages",
+    sectionName: "Languages", // Changed from 'title' to match component props
     skills: [
       { name: "HTML", icon: SiHtml5 },
       { name: "CSS", icon: SiCss3 },
@@ -31,7 +31,7 @@ export const SKILLS_DATA = [
     ],
   },
   {
-    title: "Frameworks & Libraries",
+    sectionName: "Frameworks & Libraries",
     skills: [
       { name: "React", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
@@ -42,7 +42,7 @@ export const SKILLS_DATA = [
     ],
   },
   {
-    title: "Backend & Database",
+    sectionName: "Backend & Database",
     skills: [
       { name: "MySQL", icon: SiMysql },
       { name: "Firebase", icon: SiFirebase },
@@ -50,7 +50,7 @@ export const SKILLS_DATA = [
     ],
   },
   {
-    title: "Tools",
+    sectionName: "Tools",
     skills: [
       { name: "Git", icon: SiGit },
       { name: "Postman", icon: SiPostman },

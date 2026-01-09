@@ -1,5 +1,7 @@
 import ContactButton from "@/components/contact-form/contact-button";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import { siteMetadata } from "@/data/siteMetaData.mjs";
+
 
 export default function Footer() {
   // Use your actual details here to avoid import errors
@@ -16,13 +18,11 @@ export default function Footer() {
             Get in touch
           </span>
         </div>
-        <a
-          href={`mailto:${myEmail}`}
-          target="_blank"
-          className="mb-6 cursor-pointer text-center text-2xl font-bold underline sm:text-4xl lg:text-7xl"
-        >
-          <span>{myEmail}</span>
-        </a>
+        <a href={`mailto:${siteMetadata.email}`}>
+  <span>{siteMetadata.email.split('@')[0]}@</span>
+  <br />
+  <span>{siteMetadata.email.split('@')[1]}</span>
+</a>
         <div className="flex justify-center">
           <ContactButton />
         </div>

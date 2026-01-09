@@ -1,11 +1,13 @@
-export const siteMetadata={
+export const siteMetadata = {
   title: "Tannu Waghmare | Full Stack Developer",
-  description: "Portfolio of Tannu Waghmare, a B.Tech CS student",
-  siteUrl: "https://tannu-waghmare.pages.dev", // Add this line!
+  description: "Portfolio of Tannu Waghmare, a B.Tech CS student and Full Stack Developer.",
+  siteUrl: "https://portfolio-6o5.pages.dev",
+  siteName: "Tannu Waghmare Portfolio",
+  email: "amitchauhan263871@gmail.com",
   openGraph: {
     title: "Tannu Waghmare | Full Stack Developer",
     description: "Explore my projects in Web and Mobile development.",
-    url: "https://tannu-waghmare.pages.dev", // Update this to Cloudflare
+    url: "https://portfolio-6o5.pages.dev",
     siteName: "Tannu Waghmare Portfolio",
     images: [
       {
@@ -19,7 +21,4 @@ export const siteMetadata={
   },
 };
 
-// This line is the most important fix:
-export { siteMetadata };
-export const metadata = siteMetadata;
 export default siteMetadata;

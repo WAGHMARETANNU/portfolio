@@ -1,20 +1,26 @@
-// import { type ExperienceShowcaseListItemProps } from "@/components/experience/experience-showcase-list-item";
+import { type ExperienceShowcaseListItemProps } from "@/components/experience/experience-showcase-list-item";
+
+import { Database, DatabaseBackup, DatabaseZapIcon } from "lucide-react";
 
 export const EXPERIENCE = [
   {
-    title: "Full Stack Developer (Academic Projects)",
-    company: "B.Tech Computer Science",
-    location: "Gujarat, India",
-    duration: "2026 - Present",
-    description:
-      "Developing various full-stack applications including a Hospital Traffic Monitor (Flutter/Firebase) and a Task Management System (Laravel). Focused on writing clean, maintainable code and implementing efficient database schemas.",
+    title: "Full Stack Developer",
+    organisation: {
+      name: "Void-Music Group Project", // This must be inside an object
+      href: "https://github.com/SOHAM-THUMMAR/Void-Music", // You must provide a link (or "#")
+    },
+    location: "Remote",
+    date: "3 Months", // This MUST be lowercase 'date'
+    description: "Worked in a team environment to build a music streaming platform using PHP and MySql",
   },
   {
     title: "Collaborative Developer",
-    company: "Void-Music Group Project",
+    organisation: {
+      name:"Wait-Med Group Project",
+      href: "https://github.com/SOHAM-THUMMAR/wait_med"},
     location: "Remote",
-    duration: "3 Months",
+    date: "3 Months",
     description:
-      "Worked in a team environment to build a music streaming platform using PHP and MySQL. Handled database optimization and ensured seamless integration between frontend and backend components.",
+      "Worked in a team environment to build a dynamic crowd status for hospitals platform using Flutter and Firebase. Handled database optimization and ensured seamless integration between frontend and backend components.",
   }
 ];
