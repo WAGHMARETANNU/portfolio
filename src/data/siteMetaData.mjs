@@ -1,11 +1,12 @@
-// Ensure there are NO duplicate exports in this file
+// src/data/siteMetaData.mjs
+
 export const siteMetadata = {
   title: "Tannu Waghmare | Full Stack Developer",
   description: "Portfolio of Tannu Waghmare, a B.Tech CS student and Full Stack Developer.",
   siteUrl: "https://tannu-waghmare.pages.dev",
   siteName: "Tannu Waghmare Portfolio",
-  email: "amitchauhan263871@gmail.com",
-  github:"https://github.com/WAGHMARETANNU",
+  email: "tannuwaghmare15@gmail.com",
+  github: "https://github.com/WAGHMARETANNU",
   openGraph: {
     title: "Tannu Waghmare | Full Stack Developer",
     description: "Explore my projects in Web and Mobile development.",
@@ -22,8 +23,3 @@ export const siteMetadata = {
     type: "website",
   },
 };
-
-// Next.js sometimes prefers default exports for .mjs, 
-// but your components are using Named Imports { siteMetadata }
-//export default siteMetadata;
-export { siteMetadata };

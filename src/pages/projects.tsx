@@ -8,25 +8,20 @@ export default function Projects() {
     <>
       <NextSeo
         title={`Projects by ${siteMetadata?.title} - Software Developer Portfolio`}
-        description="Explore a collection of projects, from innovative web applications to responsive interfaces, discover the depth and diversity of my work."
+        description={siteMetadata?.description}
         canonical={`${siteMetadata?.siteUrl}/projects`}
         openGraph={{
           url: `${siteMetadata?.siteUrl}/projects`,
           title: `Discover Projects by ${siteMetadata?.title}`,
-          description: "Explore a showcase of projects crafted by a Software Developer.",
-          images: [
-            {
-              url: `${siteMetadata?.siteUrl}/og-image.png`,
-              alt: `${siteMetadata?.title} - Portfolio Image`,
-            },
-          ],
-          siteName: siteMetadata?.siteName || "Portfolio",
+          description: siteMetadata?.openGraph?.description,
+          images: siteMetadata?.openGraph?.images,
+          siteName: siteMetadata?.siteName,
           type: "website",
         }}
         additionalMetaTags={[
           {
             property: "keywords",
-            content: "Projects, Portfolio, Software Developer, React, Next.js, Web Development",
+            content: "Projects, Tannu Portfolio, Software Developer, Full Stack, React, Next.js",
           },
         ]}
       />
@@ -42,7 +37,7 @@ export default function Projects() {
           </div>
           <div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
             {PROJECTS_CARD.map((card, index) => (
-              // @ts-ignore - This bypasses the strict interface mismatch between data and component
+              // @ts-ignore
               <ProjectCard key={index} {...card} />
             ))}
           </div>
@@ -54,8 +49,7 @@ export default function Projects() {
             <p className="mt-10 text-base md:text-xl">
               Visit my github to see some of the latest projects{" "}
               <a
-                // Force TypeScript to treat siteMetadata as 'any' here to stop the 'github' property error
-                href={`${(siteMetadata as any)?.github || 'https://github.com/WAGHMARETANNU'}?tab=repositories`}
+                href={`${(siteMetadata as any)?.github}?tab=repositories`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-accent underline underline-offset-2 hover:text-accent/70"
