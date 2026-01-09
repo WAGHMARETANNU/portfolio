@@ -60,6 +60,7 @@ export const PROJECTS_CARD = [
     tags: [".NET", "C#", "SQL Server"],
   },
   {
+    
     name: "Void-Music",
     description: "A collaborative PHP web application for music streaming. Focused on database optimization and user session management within a team environment.",
     images: ["/void_music.png"],
