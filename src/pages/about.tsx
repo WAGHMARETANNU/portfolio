@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { NextSeo } from "next-seo";
-import  siteMetadata  from "@/data/siteMetadata";
+import  {siteMetadata}  from "@/data/siteMetadata";
 import AboutHero from "@/components/about-hero";
 import ExperienceShowcaseList from "@/components/experience/experience-showcase-list";
 import { EXPERIENCE } from "@/data/experience";
