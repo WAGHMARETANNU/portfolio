@@ -1,21 +1,19 @@
-export const siteMetadata = {
-  title: "Amit Chauhan portfolio",
-  author: "Amit Chauhan",
-  headerTitle: "Amit Chauhan",
-  description: "Frontend and Reactjs developer",
-  language: "en-us",
-  theme: "light",
-  siteName: "amitchauhan.me",
-  siteUrl: "https://amitchauhan.me",
-  siteRepo: "https://github.com/BUMBAIYA/amitchauhan-v2",
-  siteLogo: "/favicon.ico",
-  image: "/static/homepage.png",
-  twitterImage: "/static/homepage.png",
-  socialBanner: "/static/homepage.png",
-  email: "amitchauhan263871@gmail.com",
-  github: "https://github.com/BUMBAIYA",
-  twitter: "https://twitter.com/amitcha2638",
-  linkedin: "https://www.linkedin.com/in/amitchauhan-dev",
-  locale: "en-US",
-  googleSiteVerification: "_YJlO90eSoye2AQOhbkRAzNbejzCGiTgAD4RNR3NtHc",
+export const metadata = {
+  title: "Tannu Waghmare | Full Stack Developer",
+  description: "Portfolio of Tannu Waghmare, a B.Tech CS student and Full Stack Developer specializing in .NET, Laravel, and Flutter.",
+  openGraph: {
+    title: "Tannu Waghmare | Full Stack Developer",
+    description: "Explore my projects in Web and Mobile development.",
+    url: "https://your-portfolio-link.vercel.app",
+    siteName: "Tannu Waghmare Portfolio",
+    images: [
+      {
+        url: "/images/heroProfile.png", // This uses your profile photo as the link preview
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
 };
