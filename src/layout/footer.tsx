@@ -1,6 +1,6 @@
 import ContactButton from "@/components/contact-form/contact-button";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
-import { siteMetadata } from "@/data/siteMetaData.mjs";
+import { siteMetadata } from "@/data/siteMetadata.mjs";
 
 
 export default function Footer() {
