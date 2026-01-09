@@ -8,6 +8,7 @@ import * as siteData from "@/data/siteMetaData.mjs";export default function Foot
           <span className="inline-block rounded-full bg-background px-3 py-1 text-xs font-semibold uppercase text-accent md:text-sm lg:text-base">
             Get in touch
           </span>
+          
         </div>
         <a
           href={`mailto:${siteMetadata.email}`}
