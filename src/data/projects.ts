@@ -6,30 +6,22 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     title: "Json Tree",
     href: "/projects",
     tags: ["Nextjs", "Tailwindcss", "Monaco Editor", "Vercel"],
-    image: {
-      LIGHT: "/images/projects/jsontreeLight.webp",
-      DARK: "/images/projects/jsontreeDark.webp",
-    },
+    // Change 'image' to 'images' and make it an array
+    images: ["/images/projects/jsontreeDark.webp"], 
   },
   {
     index: 1,
     title: "Many Games",
     href: "/projects",
     tags: ["Reactjs", "Tailwindcss", "Scss", "Vite", "React-router-dom", "Redux", "Vercel"],
-    image: {
-      LIGHT: "/images/projects/manyGamesLight.webp",
-      DARK: "/images/projects/manyGamesDark.webp",
-    },
+    images: ["/images/projects/manyGamesDark.webp"],
   },
   {
     index: 2,
     title: "Kanban",
     href: "/projects",
     tags: ["Reactjs", "Vite", "Tailwindcss", "Vercel", "Zustand", "React DND"],
-    image: {
-      LIGHT: "/images/projects/kanbanLight.webp",
-      DARK: "/images/projects/kanbanDark.webp",
-    },
+    images: ["/images/projects/kanbanDark.webp"],
   },
 ];
 
@@ -60,7 +52,7 @@ export const PROJECTS_CARD = [
     tags: [".NET", "C#", "SQL Server"],
   },
   {
-    
+
     name: "Void-Music",
     description: "A collaborative PHP web application for music streaming. Focused on database optimization and user session management within a team environment.",
     images: ["/void_music.png"],
