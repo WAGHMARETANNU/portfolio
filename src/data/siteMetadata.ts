@@ -1,4 +1,4 @@
-export const siteMetadata = {
+const siteMetadata = {
   title: "Tannu Waghmare | Full Stack Developer",
   description: "Portfolio of Tannu Waghmare, a B.Tech CS student and Full Stack Developer.",
   siteUrl: "https://tannu-waghmare.pages.dev",
@@ -21,4 +21,4 @@ export const siteMetadata = {
     type: "website",
   },
 };
-export default siteMetadata
+export { siteMetadata};
