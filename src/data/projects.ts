@@ -2,6 +2,7 @@ import { type ProjectShowcaseListItem } from "@/components/projects/project-show
 
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
+    
     index: 0,
     title: "Json Tree",
     href: "/projects",
