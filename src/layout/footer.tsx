@@ -1,8 +1,6 @@
 import ContactButton from "@/components/contact-form/contact-button";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
-import { siteMetadata } from "@/data/siteMetaData.mjs";
-
-export default function Footer() {
+import * as siteData from "@/data/siteMetaData.mjs";export default function Footer() {
   return (
     <footer className="flex w-full flex-col items-center gap-20 bg-transparent px-6 py-8 sm:px-14 md:px-20">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 rounded-2xl bg-accent p-8 text-background sm:p-12 md:gap-12 lg:p-20">
