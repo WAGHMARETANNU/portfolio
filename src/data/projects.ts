@@ -38,7 +38,7 @@ export const PROJECTS_CARD = [
   {
     name: "WaitMed App",
     description: "A healthcare-tech solution allowing patients to monitor real-time hospital visitor traffic. Features a Flutter-based mobile UI with a Firebase backend for live data synchronization.",
-    imageUrl: ["/waitmed.png"],
+    images: ["/waitmed.png"],
     githubUrl: "https://github.com/SOHAM-THUMMAR/wait_med",
     deployUrl: "",
     tags: ["Flutter", "Firebase", "Dart", "Group Project"],
@@ -46,7 +46,7 @@ export const PROJECTS_CARD = [
   {
     name: "TaskFlow",
     description: "A comprehensive task management system featuring CRUD operations, user authentication, and project tracking. Built with Laravel to ensure scalable backend logic.",
-    imageUrl: ["/taskflow.png"],
+    images: ["/taskflow.png"],
     githubUrl: "https://github.com/WAGHMARETANNU/taskflow",
     deployUrl: "",
     tags: ["Laravel", "PHP", "MySQL", "Tailwind"],
@@ -54,7 +54,7 @@ export const PROJECTS_CARD = [
   {
     name: "Personal Account Book",
     description: "A desktop-based financial tracking application built with .NET. Implements secure data handling for personal expense management and budget reporting.",
-    imageUrl: ["/personal_account_book.png"],
+    images: ["/personal_account_book.png"],
     githubUrl: "https://github.com/WAGHMARETANNU/Personal_Account_Book",
     deployUrl: "",
     tags: [".NET", "C#", "SQL Server"],
@@ -62,7 +62,7 @@ export const PROJECTS_CARD = [
   {
     name: "Void-Music",
     description: "A collaborative PHP web application for music streaming. Focused on database optimization and user session management within a team environment.",
-    imageUrl: ["/void_music.png"],
+    images: ["/void_music.png"],
     githubUrl: "https://github.com/SOHAM-THUMMAR/Void-Music",
     deployUrl: "",
     tags: ["PHP", "JavaScript", "MySQL", "Group Project"],
@@ -70,7 +70,7 @@ export const PROJECTS_CARD = [
   {
     name: "Python File Explorer",
     description: "A GUI-based desktop utility for navigating and managing local file systems. Built using Tkinter to provide a lightweight and efficient user interface.",
-    imageUrl: ["main.py.png"],
+    images: ["main.py.png"],
     githubUrl: "https://github.com/WAGHMARETANNU/file_management_tool",
     deployUrl: "",
     tags: ["Python", "Tkinter", "OS Module"],
