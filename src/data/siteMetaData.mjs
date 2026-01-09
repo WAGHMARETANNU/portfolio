@@ -20,4 +20,6 @@ export const siteMetadata={
 };
 
 // This line is the most important fix:
-export default siteMetadata ;
+export { siteMetadata };
+export const metadata = siteMetadata;
+export default siteMetadata;
