@@ -4,8 +4,7 @@ import SkillsShowcase from "@/components/skills/skills-showcase";
 import ProjectShowcase from "@/components/projects/project-showcase";
 import { PROJECT_SHOWCASE } from "@/data/projects";
 import { SKILLS_DATA } from "@/data/skills";
-import  siteMetadata  from "@/data/siteMetadata";
-
+import { siteMetadata } from '@/data/siteMetadata';
 export default function Home() {
   // Fallback URL to prevent canonical link errors if siteUrl is missing
   const baseUrl = siteMetadata.siteUrl || "https://tannu-waghmare.pages.dev";
