@@ -24,5 +24,5 @@ export const siteMetadata = {
 
 // Next.js sometimes prefers default exports for .mjs, 
 // but your components are using Named Imports { siteMetadata }
-export default siteMetadata;
+//export default siteMetadata;
 export { siteMetadata };
