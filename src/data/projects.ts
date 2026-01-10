@@ -3,11 +3,12 @@ import { type ProjectShowcaseListItem } from "@/components/projects/project-show
 export const PROJECT_SHOWCASE = [
   {
     index: 0,
-    
     title: "Json Tree",
     href: "/projects",
     tags: ["Nextjs", "Tailwindcss", "Monaco Editor", "Vercel"],
+    // Keep both to be safe, but imageUrl is what the Card needs
     images: ["/images/projects/jsontreeDark.webp"],
+    imageUrl: ["/images/projects/jsontreeDark.webp"], 
     image: { LIGHT: "/images/projects/jsontreeDark.webp", DARK: "/images/projects/jsontreeDark.webp" },
   },
   {
@@ -16,6 +17,7 @@ export const PROJECT_SHOWCASE = [
     href: "/projects",
     tags: ["Reactjs", "Tailwindcss", "Scss", "Vite", "React-router-dom", "Redux", "Vercel"],
     images: ["/images/projects/manyGamesDark.webp"],
+    imageUrl: ["/images/projects/manyGamesDark.webp"],
     image: { LIGHT: "/images/projects/manyGamesDark.webp", DARK: "/images/projects/manyGamesDark.webp" },
   },
   {
@@ -24,37 +26,33 @@ export const PROJECT_SHOWCASE = [
     href: "/projects",
     tags: ["Reactjs", "Vite", "Tailwindcss", "Vercel", "Zustand", "React DND"],
     images: ["/images/projects/kanbanDark.webp"],
+    imageUrl: ["/images/projects/kanbanDark.webp"],
     image: { LIGHT: "/images/projects/kanbanDark.webp", DARK: "/images/projects/kanbanDark.webp" },
   }
 ];
-
 export const PROJECTS_CARD = [
   {
     name: "WaitMed App",
+    favicon: "/favicon.ico", // Ensure you have a favicon path
     description: "A healthcare-tech solution.",
-    images: ["/waitmed.png"],
-    image: { LIGHT: "/waitmed.png", DARK: "/waitmed.png" },
-    githubUrl: "https://github.com/SOHAM-THUMMAR/wait_med",
-    deployUrl: "",
-    tags: ["Flutter", "Firebase"],
+    imageUrl: ["/waitmed.png"], // Changed from 'images' to 'imageUrl'
+    sourceCodeHref: "https://github.com/SOHAM-THUMMAR/wait_med",
+    liveWebsiteHref: "",
   },
   {
     name: "TaskFlow",
+    favicon: "/favicon.ico",
     description: "Task management system.",
-    images: ["/taskflow.png"],
-    image: { LIGHT: "/taskflow.png", DARK: "/taskflow.png" },
-    githubUrl: "https://github.com/WAGHMARETANNU/taskflow",
-    deployUrl: "",
-    tags: ["Laravel", "PHP"],
+    imageUrl: ["/taskflow.png"], // Changed from 'images' to 'imageUrl'
+    sourceCodeHref: "https://github.com/WAGHMARETANNU/taskflow",
+    liveWebsiteHref: "",
   },
   {
     name: "Personal Account Book",
+    favicon: "/favicon.ico",
     description: "Desktop-based financial tracking.",
-    images: ["/personal_account_book.png"],
-    image: { LIGHT: "/personal_account_book.png", DARK: "/personal_account_book.png" },
-    githubUrl: "https://github.com/WAGHMARETANNU/Personal_Account_Book",
-    deployUrl: "",
-    tags: [".NET", "C#"],
+    imageUrl: ["/personal_account_book.png"], // Changed from 'images' to 'imageUrl'
+    sourceCodeHref: "https://github.com/WAGHMARETANNU/Personal_Account_Book",
+    liveWebsiteHref: "",
   }
 ];
-
