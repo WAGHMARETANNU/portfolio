@@ -88,6 +88,7 @@ export const PROJECTS_CARD = [
     tags: ["PHP", "JavaScript", "MySQL", "Group Project"],
   },
   {
+    
     name: "Python File Explorer",
     description: "A GUI-based desktop utility for navigating and managing local file systems. Built using Tkinter to provide a lightweight and efficient user interface.",
     images: ["main.py.png"],
