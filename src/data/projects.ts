@@ -6,33 +6,41 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     title: "Json Tree",
     href: "/projects",
     tags: ["Nextjs", "Tailwindcss", "Monaco Editor", "Vercel"],
-    // ADD THESE TWO LINES
+    // Adding the array for the Carousel component
     images: ["/images/projects/jsontreeDark.webp"], 
-    image: { LIGHT: "/images/projects/jsontreeDark.webp", DARK: "/images/projects/jsontreeDark.webp" },
+    // Keeping the object for the Home page showcase
+    image: {
+      LIGHT: "/images/projects/jsontreeDark.webp",
+      DARK: "/images/projects/jsontreeDark.webp",
+    },
   },
   {
     index: 1,
     title: "Many Games",
     href: "/projects",
     tags: ["Reactjs", "Tailwindcss", "Scss", "Vite", "React-router-dom", "Redux", "Vercel"],
-    // ADD THESE TWO LINES
     images: ["/images/projects/manyGamesDark.webp"],
-    image: { LIGHT: "/images/projects/manyGamesDark.webp", DARK: "/images/projects/manyGamesDark.webp" },
+    image: {
+      LIGHT: "/images/projects/manyGamesDark.webp",
+      DARK: "/images/projects/manyGamesDark.webp",
+    },
   },
   {
     index: 2,
     title: "Kanban",
     href: "/projects",
     tags: ["Reactjs", "Vite", "Tailwindcss", "Vercel", "Zustand", "React DND"],
-    // ADD THESE TWO LINES
     images: ["/images/projects/kanbanDark.webp"],
-    image: { LIGHT: "/images/projects/kanbanDark.webp", DARK: "/images/projects/kanbanDark.webp" },
+    image: {
+      LIGHT: "/images/projects/kanbanDark.webp",
+      DARK: "/images/projects/kanbanDark.webp",
+    },
   },
 ];
 // We export the data without the strict type label to stop the 'githubUrl' error
 export const PROJECTS_CARD = [
   {
-    
+
     name: "WaitMed App",
     description: "A healthcare-tech solution allowing patients to monitor real-time hospital visitor traffic. Features a Flutter-based mobile UI with a Firebase backend for live data synchronization.",
     images: ["/waitmed.png"],
