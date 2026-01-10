@@ -64,6 +64,7 @@ export const PROJECTS_CARD = [
     deployUrl: "",
     tags: ["Laravel", "PHP", "MySQL", "Tailwind"],
   },
+  
   {
     name: "Personal Account Book",
     description: "A desktop-based financial tracking application built with .NET. Implements secure data handling for personal expense management and budget reporting.",
