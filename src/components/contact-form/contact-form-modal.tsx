@@ -29,11 +29,13 @@ export default function ContactFormModal({
   const handleSubmit = async (values: ContactFormValues) => {
     setIsSendingMail(true);
     try {
-      const response = await fetch("/api/sendmail", {
+      // Changed from /api/sendmail to Formspree endpoint
+      const response = await fetch("https://formspree.io/f/YOUR_FORMSPREE_ID", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
       });
+
       if (response.ok) {
         setToastState({
           type: "success",
@@ -43,19 +45,16 @@ export default function ContactFormModal({
         setShowModal(false);
       } else {
         setToastState({
-          type: response.status === 429 ? "warning" : "failure",
+          type: "failure",
           value: true,
-          message:
-            response.status === 429
-              ? "Rate Limiter: Only 5 email per hour"
-              : "Oop! Unable to send email",
+          message: "Oop! Unable to send email",
         });
       }
     } catch {
       setToastState({
         type: "failure",
         value: true,
-        message: "Oop! Unable to send email",
+        message: "Oop! Network error occurred",
       });
     }
     setIsSendingMail(false);

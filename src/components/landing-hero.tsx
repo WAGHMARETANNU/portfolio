@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
 import { AnimatePresence, motion } from "framer-motion";
-
 import FadeUp from "@/animation/fade-up";
 
 export default function LandingHero() {
@@ -21,7 +19,6 @@ export default function LandingHero() {
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
-
     return () => document.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -50,12 +47,11 @@ export default function LandingHero() {
                 I am a software developer specializing in building
                 high-performance, user-focused web applications. Skilled in{" "}
                 <span className="font-semibold text-accent">ReactJS</span>,{" "}
-                <span className="font-semibold text-accent">NextJS</span>,{" "}
-                <span className="font-semibold text-accent">SolidJS</span>, and
+                <span className="font-semibold text-accent">NextJS</span>, and
                 an expert in{" "}
                 <span className="font-semibold text-accent">JavaScript</span>,{" "}
-                <span className="font-semibold text-accent">HTML</span> and{" "}
-                <span className="font-semibold text-accent">CSS</span>
+                <span className="font-semibold text-accent">HTML</span>, and{" "}
+                <span className="font-semibold text-accent">CSS</span>.
               </div>
             </FadeUp>
           </AnimatePresence>

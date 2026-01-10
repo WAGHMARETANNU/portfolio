@@ -27,7 +27,7 @@ export default function AnimatedLogo() {
           textAnchor="middle"
           dominantBaseline="middle"
           className="font-bold text-5xl stroke-accent fill-accent"
-          style={{ strokeWidth: "2px" }}
+          strokeWidth={2}
           variants={textVariant}
           initial="hidden"
           animate="visible"
@@ -36,7 +36,7 @@ export default function AnimatedLogo() {
             fill: { duration: 2, delay: 1 },
           }}
         >
-          AC
+          TW
         </motion.text>
       </motion.svg>
     </AnimatePresence>
