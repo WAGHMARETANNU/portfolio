@@ -3,6 +3,7 @@ import { type ProjectShowcaseListItem } from "@/components/projects/project-show
 export const PROJECT_SHOWCASE = [
   {
     index: 0,
+    
     title: "Json Tree",
     href: "/projects",
     tags: ["Nextjs", "Tailwindcss", "Monaco Editor", "Vercel"],
