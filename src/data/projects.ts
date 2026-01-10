@@ -32,6 +32,7 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
 // We export the data without the strict type label to stop the 'githubUrl' error
 export const PROJECTS_CARD = [
   {
+    
     name: "WaitMed App",
     description: "A healthcare-tech solution allowing patients to monitor real-time hospital visitor traffic. Features a Flutter-based mobile UI with a Firebase backend for live data synchronization.",
     images: ["/waitmed.png"],
