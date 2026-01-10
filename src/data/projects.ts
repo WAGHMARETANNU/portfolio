@@ -6,35 +6,27 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     title: "Json Tree",
     href: "/projects",
     tags: ["Nextjs", "Tailwindcss", "Monaco Editor", "Vercel"],
-    // Keep this for the Projects page
+    // ADD THESE TWO LINES
     images: ["/images/projects/jsontreeDark.webp"], 
-    // Add this back for the Home page
-    image: {
-      LIGHT: "/images/projects/jsontreeDark.webp",
-      DARK: "/images/projects/jsontreeDark.webp",
-    },
+    image: { LIGHT: "/images/projects/jsontreeDark.webp", DARK: "/images/projects/jsontreeDark.webp" },
   },
   {
     index: 1,
     title: "Many Games",
     href: "/projects",
     tags: ["Reactjs", "Tailwindcss", "Scss", "Vite", "React-router-dom", "Redux", "Vercel"],
+    // ADD THESE TWO LINES
     images: ["/images/projects/manyGamesDark.webp"],
-    image: {
-      LIGHT: "/images/projects/manyGamesDark.webp",
-      DARK: "/images/projects/manyGamesDark.webp",
-    },
+    image: { LIGHT: "/images/projects/manyGamesDark.webp", DARK: "/images/projects/manyGamesDark.webp" },
   },
   {
     index: 2,
     title: "Kanban",
     href: "/projects",
     tags: ["Reactjs", "Vite", "Tailwindcss", "Vercel", "Zustand", "React DND"],
+    // ADD THESE TWO LINES
     images: ["/images/projects/kanbanDark.webp"],
-    image: {
-      LIGHT: "/images/projects/kanbanDark.webp",
-      DARK: "/images/projects/kanbanDark.webp",
-    },
+    image: { LIGHT: "/images/projects/kanbanDark.webp", DARK: "/images/projects/kanbanDark.webp" },
   },
 ];
 // We export the data without the strict type label to stop the 'githubUrl' error
@@ -88,7 +80,7 @@ export const PROJECTS_CARD = [
     tags: ["PHP", "JavaScript", "MySQL", "Group Project"],
   },
   {
-    
+
     name: "Python File Explorer",
     description: "A GUI-based desktop utility for navigating and managing local file systems. Built using Tkinter to provide a lightweight and efficient user interface.",
     images: ["main.py.png"],
