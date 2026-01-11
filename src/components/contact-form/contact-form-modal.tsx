@@ -30,7 +30,7 @@ export default function ContactFormModal({
     setIsSendingMail(true);
     try {
       // Changed from /api/sendmail to Formspree endpoint
-      const response = await fetch("https://formspree.io/f/YOUR_FORMSPREE_ID", {
+      const response = await fetch("https://formspree.io/f/mojjakzn", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
