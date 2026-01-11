@@ -34,12 +34,10 @@ export const SKILLS_DATA = [
     sectionName: "Frameworks & Libraries",
     skills: [
       { name: "React", icon: SiReact },
-      { name: "Next.js", icon: SiNextdotjs },
       { name: "Laravel", icon: SiLaravel },
       { name: ".NET", icon: SiDotnet },
       { name: "Flutter", icon: SiFlutter },
-      { name: "Tailwind", icon: SiTailwindcss },
-    ],
+    ]
   },
   {
     sectionName: "Backend & Database",
