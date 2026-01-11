@@ -34,7 +34,7 @@ export default function Home() {
           {
             property: "keywords",
             content:
-              "Full Stack Developer, React Developer, Next.js, Portfolio, Web Development, B.Tech CS, Tannu Waghmare",
+              "Full Stack Developer, React , PHP developer, Portfolio, Web Development, B.Tech CS, Tannu Waghmare",
           },
         ]}
       />
